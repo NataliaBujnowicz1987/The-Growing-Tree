@@ -1,0 +1,119 @@
+.service {
+    max-width: 90%;
+    margin: 0 auto;
+    background-color: #fff;
+    opacity: 0.8;
+    color: #000;
+    font-size: 20px;
+}
+
+.service h1 {
+    text-align: center;
+    margin: 15px;
+}
+
+.service>table {
+    width: 98%;
+    margin: 10px;
+    text-align: left;
+    border-top: 2px dashed #E89E12;
+    text-align: center;
+}
+
+.service>table td,
+th {
+    border-bottom: 2px dashed #E89E12;
+    padding: 20px;
+}
+
+.service th {
+    width: 20%;
+    text-align: center;
+    border-right: 2px dashed #E89E12;
+}
+
+.service ul {
+    list-style-type: none;
+}
+
+#service-buttons {
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    opacity: 0.9;
+}
+
+#service-buttons a {
+    text-decoration: none;
+    color: #000;
+}
+
+#service-buttons button {
+    padding: 10px 50px;
+    margin: 0 50px;
+    border: 2px dashed #E89E12;
+    opacity: 0.8;
+    font-size: 20px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+#service-buttons button:hover {
+    background-color: #E89E12;
+}
+
+.service-mobile {
+    display: none;
+}
+
+
+@media (max-width: 1025px) {
+    .service {
+        font-size: 15px;
+        padding-bottom: 10px;
+    }
+
+    #service-buttons button {
+        min-width: 200px;
+        margin: 10px;
+        font-size: 15px;
+    }
+
+    .service>table td,
+    th {
+        padding: 10px;
+    }
+}
+
+
+@media (max-width: 460px) {
+    .service th {
+        padding: 10px !important;
+    }
+}
+
+@media (max-width: 420px) {
+    table {
+        display: none;
+    }
+
+    .service-mobile {
+        display: inline-block;
+        border-bottom: 2px dashed #E89E12;
+    }
+    
+    .service-mobile h3 {
+        border-top: 2px dashed #E89E12;
+        border-bottom: 2px dashed #E89E12;
+        padding: 5px;
+    }
+
+    .service-mobile p {
+         padding: 15px 0;
+    }
+}
+

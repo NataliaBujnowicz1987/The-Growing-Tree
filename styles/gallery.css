@@ -1,0 +1,57 @@
+#gallery {
+	display: flex; /* makes it easier to design flexible layout structure without using float or positioning*/
+	flex-wrap: wrap; /*The flex-wrap property specifies whether the flex items should wrap or not. Here the wrap value specifies that the flex items will wrap if necessary*/
+	justify-content: space-around; /*The justify-content property is used to align the flex items*/
+	margin: 0 20px ;
+}
+
+.gallery-header {
+	opacity: 0.8;
+	text-align: center;
+	margin: 15px;
+	font-size: 42px;
+}
+    
+.photo {
+	margin: 20px 0;
+	width: 300px;
+	padding: 10px;
+	border-radius: 5px;
+    border: 2px dashed #99cc33;
+	box-sizing: border-box; 
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	transform: rotate(3deg);
+	transition: 0.3s all linear;
+	background-color: #fff;
+}
+
+.photo img {
+	width: 100%;
+	overflow: hidden;
+}
+
+.photo figcaption {
+    margin-top: 10px;
+    font-size: 20px;
+	color: #000;
+	text-align: center;
+}
+
+.photo:nth-child(even) {
+	transform: rotate(-2deg) scale(0.9);
+}
+
+.photo:hover {
+	transition: 0.3s all linear;
+	transform: scale(1.1);
+	border: 2px dashed orange;
+}
+
+@media (max-width: 460px) {
+	.gallery-header {
+		font-size: 32px;
+	}
+}
+
