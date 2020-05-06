@@ -1,0 +1,624 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Alegreya', serif;
+}
+
+body {
+    max-width: 80vw;
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin: auto;
+}
+
+
+/* ------- HEADER------ */
+header {
+    -ms-flex-preferred-size: 18vh;
+    flex-basis: 18vh;
+    background-image: url("../img/f-100px.jpg");
+    background-size: 100% 90%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    position: relative;
+}
+
+#logo {
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    width: 200px;
+    height: auto;
+    transform: translate(-50%, 0%);
+    z-index: 2;
+}
+
+#logo img {
+    width: 100%;
+}
+
+nav {
+    display: block;
+    text-align: center;
+    padding: 3px 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: green;
+    padding: 0;
+    text-shadow: 1px 0px 2px #000;
+    font-size: 26px;
+}
+
+nav a:hover {
+    color: orange;
+}
+
+nav ul {
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+nav li {
+    /* grow shrink basis */
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 0;
+    flex: 1 1 0;
+}
+
+/* ---- MAIN CONTENT ---- */
+main {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    background-image: url("../img/bcg.jpg");
+    background-size: 100% auto;
+    background-repeat: repeat-y;
+    text-align: center;
+}
+
+.main-top {
+    -ms-flex-preferred-size: 10vh;
+    flex-basis: 10vh;
+    background-image: url("../img/bcg-footer2.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    -webkit-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+}
+
+.main-bottom {
+    -ms-flex-preferred-size: 10vh;
+    flex-basis: 10vh;
+    background-image: url("../img/bcg-footer2.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+#slider {
+    margin: 0 auto;
+    margin-top: 15px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: hidden;
+    width: 88%;
+     -webkit-box-shadow: 1px 1px 10px 1px #000;
+    box-shadow: 1px 1px 10px 1px #000;
+    /*border: 2px ridge #fff; */
+
+    border: 2px dashed #99cc33;
+    /* border-radius: 15px; */
+    /* background-color: #000; */
+}
+
+#slider img {
+    width: 100%;
+    margin-bottom: -6px;
+}
+
+.box-container {
+    margin: 0 auto;
+    padding: 50px 0;
+    width: 88%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    min-height: 150px;
+}
+
+.box-container p {
+    font-size: 28px;
+    padding: 22px;
+    text-shadow: 4px 4px 5px #000;
+    color: #fff;
+}
+
+.box {
+    -ms-flex-preferred-size: 30%;
+    flex-basis: 30%;
+     -webkit-box-shadow: 1px 1px 10px 1px #000;
+    box-shadow: 1px 1px 10px 1px #000;
+
+
+   /* border: 2px ridge #fff;
+    border-radius: 15px; */
+
+    border: 2px dashed #fff;
+    cursor: pointer;
+    position: relative;
+}
+
+.box-container img {
+    width: 35%;
+}
+
+.box-yellow {
+    background-color: orange;
+    transition: 0.9s linear;
+}
+
+.box-yellow:hover, 
+.box-blue:hover,
+.box-red:hover {
+    background-color: #000;
+    opacity: 0.8;
+}
+
+.box-yellow p {
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+}
+
+.box-yellow img {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    -webkit-transition: 2s linear;
+    -o-transition: 2s linear;
+    transition: 2s linear;
+}
+
+.box-yellow img:hover {
+    -webkit-transform: rotate(160deg);
+    -ms-transform: rotate(160deg);
+    transform: rotate(160deg);
+}
+
+.box-blue {
+    background-color: blue;
+    transition: 0.9s linear;
+}
+
+.box-blue p {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.box-blue img {
+    position: absolute;
+    bottom: 25px;
+    right: 5px;
+    -webkit-transition: 2s linear;
+    -o-transition: 2s linear;
+    transition: 2s linear;
+}
+
+.box-blue img:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.box-red {
+    background-color: red;
+    transition: 0.9s linear;
+}
+
+.box-red p {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.box-red img {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    -webkit-transition: 2s linear;
+    -o-transition: 2s linear;
+    transition: 2s linear;
+}
+
+.box-red img:hover {
+    left: 35px;
+}
+
+.main-green {
+    display: inline-block;
+    text-align: center;
+    width: 88%;
+    background-color: #99cc33;
+     -webkit-box-shadow: 1px 1px 10px 1px #000;
+    box-shadow: 1px 1px 10px 1px #000;
+    text-shadow: 2px 2px 5px #fff;
+   /* border: 2px ridge #fff;
+    border-radius: 15px; */
+
+    border: 2px dashed #fff;
+}
+
+.main-green p {
+    color: #000;
+    font-size: 28px;
+    padding: 50px;
+}
+
+.main-green span {
+    float: left;
+    text-align: left;
+}
+
+.img-bus {
+    height: 50px;
+    padding-bottom: 50px;
+}
+
+.img-bus img {
+    position: relative;
+    bottom: 90px;
+    left: 300px;
+    width: 34%;
+    cursor: pointer;
+    -webkit-transition: 10s linear;
+    -o-transition: 10s linear;
+    transition: 10s linear;
+}
+
+.img-bus img:hover {
+    left: -300px;
+}
+
+footer {
+    text-align: center;
+    padding: 5px;
+}
+
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 1025px) {
+    header {
+        -ms-flex-preferred-size: 15vh;
+        flex-basis: 15vh;
+        background-size: 100% 90%;
+    }
+
+    #logo {
+        width: 100px;
+    }
+
+    nav a {
+        font-size: 22px;
+        padding: 0;
+    }
+
+    .main-top {
+        -ms-flex-preferred-size: 7vh;
+        flex-basis: 7vh;
+    }
+
+    .main-bottom {
+        -ms-flex-preferred-size: 8vh;
+        flex-basis: 8vh;
+    }
+
+    .box-container {
+        padding: 30px 0;
+        min-height: 100px;
+    }
+
+    .box-container p {
+        font-size: 18px;
+        padding: 12px;
+    }
+
+    .box-container img {
+        width: 30%;
+    }
+
+    .box-yellow p {
+        position: absolute;
+        bottom: 5px;
+        right: 5px;
+    }
+
+    .box-yellow img {
+        top: 5px;
+        left: 5px;
+    }
+
+    .box-blue p {
+        font-size: 18px;
+        padding: 12px;
+        left: 0;
+    }
+
+    .box-blue img {
+        bottom: 35px;
+        right: 3px;
+    }
+
+    .box-red p {
+        bottom: 20px;
+        right: 10px;
+    }
+
+    .box-red img {
+        top: 10px;
+        left: 10px;
+    }
+
+    .box-red img:hover {
+        top: 30px;
+        left: 10px;
+    }
+
+    .main-green p {
+        font-size: 20px;
+        padding: 20px;
+    }
+
+    .img-bus {
+        padding-bottom: 10px;
+    }
+
+    .img-bus img {
+        bottom: 60px;
+        left: 180px;
+    }
+
+    .img-bus img:hover {
+        left: -100px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+}
+
+/* iPad portrait · width: 768px */
+@media (width: 768px) {
+    header {
+        -ms-flex-preferred-size: 10vh;
+        flex-basis: 10vh;
+    }
+
+    nav {
+        padding: 2px;
+    }
+
+    .main-top {
+        -ms-flex-preferred-size: 3vh;
+        flex-basis: 4vh;
+    }
+
+    .main-bottom {
+        -ms-flex-preferred-size: 4vh;
+        flex-basis: 4vh;
+    }
+}
+
+/* iPhone 6-8 landscape · width: 736px */
+@media (width: 736px) {
+    header {
+        -ms-flex-preferred-size: 15vh;
+        flex-basis: 15vh;
+    }
+
+    #logo {
+        width: 80px;
+     }
+
+    .main-top {
+        -ms-flex-preferred-size: 9vh;
+        flex-basis: 9vh;
+    }
+
+    .main-bottom {
+        -ms-flex-preferred-size: 9vh;
+        flex-basis: 9vh;
+    }
+}
+
+/* iPhone eXpensive landscape · width: 734px */
+@media (max-width: 734px) {
+    header {
+        -ms-flex-preferred-size: 15vh;
+        flex-basis: 15vh;
+    }
+
+    #logo {
+        width: 75px;
+        }
+
+    .main-top {
+        -ms-flex-preferred-size: 5vh;
+        flex-basis: 9vh;
+    }
+
+    .main-bottom {
+        -ms-flex-preferred-size: 5vh;
+        flex-basis: 9vh;
+    }
+
+}
+
+@media (max-width: 640px) {
+    header {
+        -ms-flex-preferred-size: 10vh;
+        flex-basis: 10vh;
+    }
+
+    .main-top {
+        -ms-flex-preferred-size: 5vh;
+        flex-basis: 5vh;
+    }
+
+    .main-bottom {
+        -ms-flex-preferred-size: 5vh;
+        flex-basis: 5vh;
+    }
+
+    /* WERSJA POZIOMA X 3 */
+    .box-container {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding: 5px;
+    }
+
+    .box {
+        margin: 10px 0;
+    }
+
+    .box-yellow p {
+        font-size: 20px;
+        bottom: 15px;
+        right: 100px;
+        padding: 0;
+    }
+
+    .box-yellow img {
+        position: static;
+        width: 15%;
+        padding: 5px;
+        margin-left: -50%;
+    }
+
+    .box-blue p {
+        font-size: 20px;
+        padding: 0;
+        top: 15px;
+        left: 60px;
+    }
+
+    .box-blue img {
+        position: static;
+        width: 15%;
+        padding: 10px;
+        margin-left: 50%;
+    }
+
+    .box-red p {
+        font-size: 20px;
+        padding: 0;
+        bottom: 30px;
+        right: 50px;
+    }
+
+    .box-red img {
+        position: static;
+        width: 15%;
+        padding: 10px;
+        margin-left: -50%;
+    }
+
+    .box-red img:hover {
+        margin-left: -20%;
+    }
+
+    .main-green p {
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    .img-bus {
+        padding-bottom: 1px;
+    }
+
+    .img-bus img {
+        bottom: 40px;
+        left: 110px;
+    }
+
+    .img-bus img:hover {
+        left: -100px;
+    }
+
+}
+
+@media (max-width: 460px) {
+    header {
+        -ms-flex-preferred-size: 8vh;
+        flex-basis: 8vh;
+        background-size: 100% 90%;
+    }
+
+    .main-top {
+        -ms-flex-preferred-size: 3vh;
+        flex-basis: 3vh;
+    }
+
+    .main-bottom {
+        -ms-flex-preferred-size: 4vh;
+        flex-basis: 4vh;
+    }
+
+    #logo {
+    width: 60px;
+    }
+
+    nav {
+        padding: 2px 0;
+    }
+
+    nav a {
+        padding: 0;
+        font-size: 15px;
+    }
+
+    .box-yellow p {
+        bottom: 6px;
+        right: 50px;
+    }
+
+    .box-red p {
+        bottom: 20px;
+        right: 50px;
+    }
+
+    .box-container p {
+        font-size: 15px;
+    }
+
+    .img-bus {
+        height: 20px;
+    }
+
+    .img-bus img {
+        bottom: 30px;
+        left: 80px;
+    }
+
+    .img-bus img:hover {
+        left: -80px;
+    }
+
+    footer {
+        padding: 1px;
+    }
+}
