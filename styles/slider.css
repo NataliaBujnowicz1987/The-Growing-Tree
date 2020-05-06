@@ -1,0 +1,85 @@
+.slides {
+    position: relative;
+    list-style: none;
+}
+
+.slides li {
+    position: absolute;
+    display: none;
+    width: 100%;
+}
+
+.slides li:first-child {
+    position: relative;
+    display: block;
+    float: left;
+}
+
+.slides img {
+    display: block;
+    height: 100%;
+    float: left;
+    width: 100%;
+}
+
+.rslides_tabs {
+    list-style: none;
+    background-color: #99cc33;
+    /* opacity: 0.8; */
+     box-shadow: 1px 1px 10px 1px #000;
+    /*border-left: 2px ridge #fff;
+    border-right: 2px ridge #fff;
+    border-bottom: 2px ridge #fff;
+    border-radius: 0 0 15px 15px; */
+
+    border-right: 2px dashed #fff;
+    border-left: 2px dashed #fff;
+    border-bottom: 2px dashed #fff;
+    /* font-size: 18px; */
+    font-weight: bold;
+    margin: 1px auto;
+    max-width: 80%;
+    padding: 10px 0;
+    text-align: center;
+    
+}
+
+.rslides_tabs li {
+    display: inline;
+    float: none;
+    margin-right: 1px;
+    
+}
+
+.rslides_tabs a {
+    width: auto;
+    line-height: 20px;
+    padding: 9px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.rslides_tabs .rslides_here a {
+    background: rgba(255, 255, 255, .1);
+    color: #fff;
+    font-weight: bold;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media only screen and (max-width: 780px) {
+    .rslides_tabs {
+        font-size: 12px;
+        padding: 5px 0;
+    }
+}
+
+@media only screen and (max-width: 447px) {
+    .rslides_tabs {
+        font-size: 7px;
+        margin: 0 auto;
+        max-width: 80%;
+        /* padding: 5px 0; */
+        text-align: center;
+    }
+} 
