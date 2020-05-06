@@ -1,3 +1,3 @@
 ﻿# The-Growing-Tree
  
- https://nataliabujnowicz1987.github.io/The-Growing-Tree/index.html
+https://nataliabujnowicz1987.github.io/The-Growing-Tree/
