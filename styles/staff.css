@@ -1,9 +1,9 @@
 .staff h1{
-	font-family: 'Alegreya', serif;
-	text-align: center;
-    margin: 10px;
-    opacity: 0.8;
-    color: #000;
+    	font-family: 'Alegreya', serif;
+    	text-align: center;
+   	margin: 10px;
+   	opacity: 0.8;
+   	color: #000;
 }
 
 .staff-boxes {
@@ -25,9 +25,9 @@
 	width: 95%;
 	height: 250px;
 	-webkit-box-shadow: 1px 1px 10px 1px #000;
-    box-shadow: 1px 1px 10px 1px #000;
-	border: 2px ridge #fff;
-    border-radius: 15px;
+    	box-shadow: 1px 1px 10px 1px #000;
+	border: 2px dashed #99cc33;
+    	border-radius: 15px;
 }
 
 .staff-info {
@@ -37,8 +37,6 @@
 	text-align: left;
 	padding: 15px;
 	letter-spacing: 1px;
-	/* -webkit-box-shadow: 1px 1px 10px 1px #000;
-    box-shadow: 1px 1px 10px 1px #000; */
 	border-radius: 15px;
 	border: 2px dashed #99cc33;
 	overflow: hidden;
